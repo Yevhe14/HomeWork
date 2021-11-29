@@ -1,3 +1,4 @@
+#Task 1
 text = input("Введіть текст: ")
 text_str = text.split(' ')
 maxLen = 0
