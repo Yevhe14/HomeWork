@@ -1,3 +1,4 @@
+#калькулятор
 def sum(a,b):        #Додавання
     return a + b
 
@@ -31,3 +32,24 @@ def cheack_operator(operand_A, operand_B, operation):   #Перевірка як
         print(f"{operand_A} {operation} {operand_B} = {result}")
 a, operation, b = input().split()
 cheack_operator(int(a), int(b), operation)
+
+
+#Бронювання
+last_name = "Сідоров"
+last_name2 = "Петров"
+count = 4
+
+desk = {2: "столик на 2",
+        4: "столик на 4",
+        6: "столик на 6"}
+
+def bron(last_name, count = 2):
+    if count <= 4 and count > 2:
+        print(f"{last_name} забронював {desk[4]}")
+    if count <= 6 and count > 4:
+        print(f"{last_name} забронював {desk[6]}")
+    elif count <=2 and count < 3:
+        print(f"{last_name} забронював {desk[2]}")
+bron(last_name, count)
+print()
+bron(last_name2)
